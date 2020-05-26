@@ -1,52 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 node('master')
 {
    stage('ContinuousDownload')
     {
-        git 'https://github.com/intelliqittrainings/maven.git'
+        git 'https://github.com/aparna662/appuintelliqitprograms.git'
     } 
     
     stage('ContinuousBuild')
@@ -61,7 +17,7 @@ node('master')
     
     stage('ContinuousTesting')
     {
-        git 'https://github.com/intelliqittrainings/FunctionalTesting.git'
+        git 'https://github.com/aparna662/appu-ft-intelliqit.git'
     }
     
     stage('ContinuousDelivery')
